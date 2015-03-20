@@ -1,0 +1,96 @@
+//The Original Codes from Dream Browser!
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Media;
+
+
+// Dream Life Ltd. All rights Reserved
+
+
+namespace Dream_Browser
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("www.google.com");
+        }
+
+        // Makes Going Back code
+        private void button1_Click(object sender, EventArgs e)
+        {
+            webBrowser1.GoBack();
+        }
+
+        // Makes Going forward code
+        private void button2_Click(object sender, EventArgs e)
+        {
+            webBrowser1.GoForward();
+        }
+
+        // Simply Goes to the link in textbox
+        private void button5_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate(textBox1.Text);
+        }
+
+        // Refresh the Web Browser
+        private void button6_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Refresh();
+        }
+
+        // That's the hard part. With you can play songs. This codes not working with OTHER computers... :( We're fixing it.
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Please put the App File to C://Users/USER/Downloads");
+            SoundPlayer player = new SoundPlayer();
+            string dizin = "C:/Users/Win7/Downloads/Feelin_ Myself.wav";
+            player.SoundLocation = dizin;
+            player.Play();
+        }
+
+        // Open the Settings form
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form2 fr2 = new Form2();
+            fr2.Show();
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            SoundPlayer player = new SoundPlayer();
+            player.Stop();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Refresh();
+            webBrowser1.Refresh();
+            
+        }
+
+        private void geckoWebBrowser1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
+    }
+}
+
