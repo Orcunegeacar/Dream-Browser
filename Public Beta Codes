@@ -1,5 +1,3 @@
-//The Original Codes from Dream Browser!
-
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,7 +10,7 @@ using System.Windows.Forms;
 using System.Media;
 
 
-// Orcunegeacar. All rights Reserved
+// Orcunegeacar All rights Reserved
 
 
 namespace Dream_Browser
@@ -24,10 +22,12 @@ namespace Dream_Browser
             
             InitializeComponent();
         }
-
+        
+        //Nothing -_-
         private void Form1_Load(object sender, EventArgs e)
         {
             webBrowser1.Navigate("www.google.com");
+            MessageBox.Show("This is a Pre-Release for Dream Browser Public Beta 1.0.3","Pre-Release");
         }
 
         // Makes Going Back code
@@ -54,15 +54,6 @@ namespace Dream_Browser
             webBrowser1.Refresh();
         }
 
-        // That's the hard part. With you can play songs. This codes not working with OTHER computers... :( We're fixing it.
-        private void button4_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Please put the App File to C://Users/USER/Downloads");
-            SoundPlayer player = new SoundPlayer();
-            string dizin = "C:/Users/Win7/Downloads/Feelin_ Myself.wav";
-            player.SoundLocation = dizin;
-            player.Play();
-        }
 
         // Open the Settings form
         private void button3_Click(object sender, EventArgs e)
@@ -72,12 +63,7 @@ namespace Dream_Browser
 
         }
 
-        private void button7_Click(object sender, EventArgs e)
-        {
-            SoundPlayer player = new SoundPlayer();
-            player.Stop();
-        }
-
+        //Boost Button. X2 Refresh :D
         private void button8_Click(object sender, EventArgs e)
         {
             webBrowser1.Refresh();
@@ -85,12 +71,23 @@ namespace Dream_Browser
             
         }
 
+        //Started to changing the IE webbrowser ;)
         private void geckoWebBrowser1_Click(object sender, EventArgs e)
         {
 
         }
 
+        //Easter Egg :O
+        private void label2_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://github.com/Orcunegeacar/Dream-Browser/releases");
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://github.com/Orcunegeacar/Dream-Browser");
+        }
+
         
     }
 }
-
