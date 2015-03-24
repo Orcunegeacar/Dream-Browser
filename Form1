@@ -8,9 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.Net;
 
 
-// Orcunegeacar All rights Reserved
+// Orcunegeacar All rights Reserved.
 
 
 namespace Dream_Browser
@@ -27,7 +28,11 @@ namespace Dream_Browser
         private void Form1_Load(object sender, EventArgs e)
         {
             webBrowser1.Navigate("www.google.com");
-            MessageBox.Show("This is a Pre-Release for Dream Browser Public Beta 1.0.3","Pre-Release");
+            MessageBox.Show("Dream Browser created by Orcunegeacar. For more informations, go to https://github.com/Orcunegeacar", "");
+
+
+
+
         }
 
         // Makes Going Back code
@@ -66,8 +71,12 @@ namespace Dream_Browser
         //Boost Button. X2 Refresh :D
         private void button8_Click(object sender, EventArgs e)
         {
-            webBrowser1.Refresh();
-            webBrowser1.Refresh();
+            DialogResult tus;
+            tus = colorDialogData1.ShowDialog();
+            if (tus == DialogResult.OK)
+            {
+                this.BackColor = colorDialogData1.Color;
+            }
             
         }
 
@@ -86,6 +95,29 @@ namespace Dream_Browser
         private void label1_Click(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://github.com/Orcunegeacar/Dream-Browser");
+        }
+
+        //Home Button! Navigates to Google's HomePage.
+        private void button7_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://www.google.com");
+        }
+
+        //New Stuff! Console! A quick open for cmd. :)
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Console is openning... Make sure you have System32 folder!");
+            System.Diagnostics.Process.Start(@"C:\Windows\System32\cmd.exe");
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("www.facebook.com/orcun.e.acar");
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         
