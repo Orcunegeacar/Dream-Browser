@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Dream_Browser
+{
+    public partial class Form2 : Form
+    {
+        public Form2()
+        {
+            InitializeComponent();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Dream Browser wrote in C# in Visual Studio 2013 Desktop version. It's a simple&fast web browser to enjoy Internet. First Beta (1.0.2) created in 15.03.2015 (22:11). This App taked a lot of time from me. I worked hard and I did it. You can watch Youtube Videos in 1080p without loaading screen. (just 5 seconds) +Super Fast because there is no extensions. +Super Basic because no computer language (like 005656045960456945) :D +Super Realistic because using GPU. +Super Trustable because no survey. +Super Strong because The Browser supports Google's products full.");
+        }
+
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Still in development. Please be respectful to us.");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Orcunegeacar/Dream-Browser/releases");
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
