@@ -120,6 +120,11 @@ namespace Dream_Browser
 
         }
 
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
+        }
+
         
     }
 }
